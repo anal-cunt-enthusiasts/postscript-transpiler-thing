@@ -1,2 +1,2 @@
-# ghostscript-transpiler-thing
+# postscript-transpiler-thing
 idk
