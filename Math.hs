@@ -1,6 +1,6 @@
 module Math where
 
-import Text.Printf
+import Text.Printf (printf)
 
 -- Math Expression
 data ME = I Int
@@ -55,3 +55,19 @@ matheval (Trunc n) = addunaryop n "Trunc"
 matheval (Round n) = addunaryop n "Round"
 matheval (Rand)    = printf "rand"
 
+{-
+class Math a where
+  (+) :: a -> a -> String
+
+instance Math Int where
+  a + b = printf "%d %d add" a b
+
+instance Math Integer where
+  a + b = printf "%d %d add" a b
+
+instance Math Float where
+  a + b = printf "%f %f add" a b
+
+instance Math Double
+  a + b = printf "%f %f add" a b
+-}
